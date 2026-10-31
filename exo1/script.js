@@ -1,49 +1,45 @@
-// Mode strict : signale les variables non déclarées avec let, const ou var (slide 52)
+// mode strict, ca oblige a declarer les variables (slide 52)
 "use strict";
 
-// Déclaration de variables avec let (slide 52)
-// Type primitif string : chaîne de caractères (slide 38)
-// Affectation avec le signe = et fin d'instruction avec ; (slide 37)
+// les variables avec let (slide 52)
+// nom et prenom c des string (slide 38)
 let nom = "John";
 let prenom = "Doe";
 
-// Type primitif number : nombre entier (slide 38)
+// age et note c des number (slide 38)
 let age = 30;
 let note = 15;
 
-// Déclaration d'une constante avec const (slide 52)
-// Type primitif number : nombre réel (slide 38)
+// pi change pas donc const (slide 52)
 const PI = 3.14;
 
-// Déclaration d'une fonction sans paramètres (slide 46)
-// Appelée lors de l'événement onclick du bouton "Nom" (slide 18)
-// Affichage dans la console avec console.log() (slide 34)
+// fonction sans parametre (slide 46), elle se lance au clic sur Nom (slide 18)
+// on affiche dans la console avec console.log (slide 34)
 function f1() {
     console.log(nom);
 }
 
-// Fonction sans paramètres appelée au clic sur "Prénom" (slides 46 et 18)
+// meme chose pour le prenom
 function f2() {
     console.log(prenom);
 }
 
-// Fonction sans paramètres appelée au clic sur "Nom & Prénom" (slides 46 et 18)
-// Concaténation de chaînes avec l'opérateur + (slide 38)
+// on colle nom et prenom avec un tiret, concatenation avec + (slide 38)
 function f3() {
     console.log(nom + "-" + prenom);
 }
 
-// Fonction sans paramètres appelée au clic sur "Age" (slides 46 et 18)
+// affiche l'age
 function f4() {
     console.log(age);
 }
 
-// Fonction sans paramètres appelée au clic sur "Note" (slides 46 et 18)
+// affiche la note
 function f5() {
     console.log(note);
 }
 
-// Fonction sans paramètres appelée au clic sur "Pi" (slides 46 et 18)
+// affiche pi
 function f6() {
     console.log(PI);
 }
